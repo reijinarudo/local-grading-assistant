@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
-  macOS only. Starts start-webui.sh at login and restarts it if it exits.
-  1. Replace /ABSOLUTE/PATH/TO/reggiegpt with the folder you cloned this repo into.
-  2. Save as ~/Library/LaunchAgents/com.reggiegpt.webui.plist
-  3. launchctl load ~/Library/LaunchAgents/com.reggiegpt.webui.plist
+  macOS only. Starts start-model.sh at login and restarts it if it exits.
+  1. Replace /ABSOLUTE/PATH/TO/local-grading-assistant with the folder you cloned this repo into.
+  2. Save as ~/Library/LaunchAgents/com.local-grading-assistant.model.plist
+  3. launchctl load ~/Library/LaunchAgents/com.local-grading-assistant.model.plist
   To change settings later: edit, then launchctl unload and launchctl load again.
   With KeepAlive on, killing the process by hand does not stop it; launchd restarts it.
 -->
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.reggiegpt.webui</string>
+  <string>com.local-grading-assistant.model</string>
   <key>ProgramArguments</key>
   <array>
     <string>/bin/bash</string>
-    <string>/ABSOLUTE/PATH/TO/reggiegpt/server/start-webui.sh</string>
+    <string>/ABSOLUTE/PATH/TO/local-grading-assistant/server/start-model.sh</string>
   </array>
   <key>RunAtLoad</key>
   <true/>
   <key>KeepAlive</key>
   <true/>
   <key>StandardOutPath</key>
-  <string>/tmp/reggiegpt-webui.log</string>
+  <string>/tmp/local-grading-assistant-model.log</string>
   <key>StandardErrorPath</key>
-  <string>/tmp/reggiegpt-webui.log</string>
+  <string>/tmp/local-grading-assistant-model.log</string>
 </dict>
 </plist>

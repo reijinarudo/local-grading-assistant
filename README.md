@@ -1,10 +1,10 @@
-# ReggieGPT
+# Local Grading Assistant
 
-ReggieGPT is a private AI assistant that runs on one computer you own and is reachable from other machines on your home or office network. It combines an open-weight language model, a browser chat interface, and a set of Python grading tools, so an instructor can draft feedback on student work without sending that work to a cloud AI service.
+Local Grading Assistant is a private AI assistant that runs on one computer you own and is reachable from other machines on your home or office network. It combines an open-weight language model, a browser chat interface, and a set of Python grading tools, so an instructor can draft feedback on student work without sending that work to a cloud AI service.
 
 ## Why it exists
 
-Instructors who use AI to help grade face a privacy problem: student submissions are protected records, and schools are tightening rules on sending them to third-party services. ReggieGPT keeps every file on local hardware. The model, the chat interface, and the grading scripts all run on the same machine, with no cloud fallback.
+Instructors who use AI to help grade face a privacy problem: student submissions are protected records, and schools are tightening rules on sending them to third-party services. Local Grading Assistant keeps every file on local hardware. The model, the chat interface, and the grading scripts all run on the same machine, with no cloud fallback.
 
 The project has three layers:
 
@@ -57,8 +57,8 @@ These steps assume macOS with Homebrew. On Linux, install llama.cpp from your pa
 1. Clone the repository and enter it.
 
    ```
-   git clone https://github.com/reijinarudo/reggiegpt.git
-   cd reggiegpt
+   git clone https://github.com/reijinarudo/local-grading-assistant.git
+   cd local-grading-assistant
    ```
 
 2. Install llama.cpp and uv.
@@ -144,7 +144,7 @@ Use one chat per student, so no student's work carries into the next grade. Befo
 ## Project layout
 
 ```
-reggiegpt/
+local-grading-assistant/
   README.md
   LICENSE                                  MIT, for this project's own code
   .env.example                             every setting, with placeholder values
@@ -166,7 +166,7 @@ reggiegpt/
 
 ## Credits
 
-ReggieGPT is built on the following open-source projects and models. This repository contains none of their source code; it installs and configures them.
+Local Grading Assistant is built on the following open-source projects and models. This repository contains none of their source code; it installs and configures them.
 
 | Project | Author | Link | License |
 | --- | --- | --- | --- |
