@@ -1,0 +1,140 @@
+{
+  "_comment": "Fictional example. Copy to course_config.json and replace every value with your own assignment's facts. Keep course_config.json out of version control if it holds a live answer key.",
+  "assignment_title": "Example Module: Describing a Data Set",
+  "variables": [
+    "StudyHours",
+    "Housing",
+    "CreditHours",
+    "Major",
+    "CommuteMin"
+  ],
+  "categorical": [
+    "Housing",
+    "Major"
+  ],
+  "codebook": {
+    "Housing": {
+      "1": "On campus",
+      "2": "Off campus with family",
+      "3": "Off campus other"
+    },
+    "Major": {
+      "1": "Biology",
+      "2": "Business",
+      "3": "Education",
+      "4": "Nursing",
+      "5": "Other"
+    }
+  },
+  "true_values": {
+    "StudyHours": {
+      "n": 60,
+      "mean": 8.77,
+      "median": 9.0,
+      "sd": 4.014,
+      "min": 0.0,
+      "max": 18.0,
+      "q1_hinge": 6.0,
+      "q3_hinge": 12.0,
+      "skew": -0.22
+    },
+    "CreditHours": {
+      "n": 60,
+      "mean": 12.45,
+      "median": 12.0,
+      "sd": 3.78,
+      "min": 6.0,
+      "max": 18.0,
+      "q1_hinge": 9.0,
+      "q3_hinge": 15.0,
+      "skew": -0.19
+    },
+    "CommuteMin": {
+      "n": 60,
+      "mean": 24.7,
+      "median": 24.5,
+      "sd": 9.682,
+      "min": 4.0,
+      "max": 45.0,
+      "q1_hinge": 19.0,
+      "q3_hinge": 32.0,
+      "skew": -0.14
+    },
+    "Housing": {
+      "1": 11,
+      "2": 35,
+      "3": 14
+    },
+    "Major": {
+      "1": 6,
+      "2": 17,
+      "3": 10,
+      "4": 20,
+      "5": 7
+    }
+  },
+  "box_names": {
+    "0": "Variable Identification table",
+    "1": "Bar chart for StudyHours (image box)",
+    "2": "Histogram for StudyHours (image box)",
+    "3": "Boxplot for StudyHours (image box)",
+    "4": "Comparison of the three StudyHours displays",
+    "5": "Visualization and commentary for Housing",
+    "6": "Visualization and commentary for CreditHours",
+    "7": "Visualization and commentary for Major",
+    "8": "Visualization and commentary for CommuteMin",
+    "9": "REPORT (150 words maximum)",
+    "10": "REFLECTION"
+  },
+  "layout": {
+    "variable_table_box": 0,
+    "image_only_boxes": [
+      1,
+      2,
+      3
+    ],
+    "comparison_box": 4,
+    "chart_commentary_boxes": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "report_box": 9,
+    "reflection_box": 10
+  },
+  "report_word_limit": 150,
+  "report_keywords": {
+    "study hours": [
+      "study",
+      "hours a week"
+    ],
+    "housing": [
+      "housing",
+      "campus",
+      "live"
+    ],
+    "credit hours": [
+      "credit"
+    ],
+    "major": [
+      "major",
+      "business",
+      "nursing",
+      "biology",
+      "education"
+    ],
+    "commute": [
+      "commute",
+      "minutes"
+    ]
+  },
+  "named_group_label": "a specific major",
+  "named_group_keywords": [
+    "biology",
+    "business",
+    "education",
+    "nursing"
+  ],
+  "ignore_missing_columns": []
+}
