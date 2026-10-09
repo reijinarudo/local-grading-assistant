@@ -57,7 +57,7 @@ These steps assume macOS with Homebrew. On Linux, install llama.cpp from your pa
 1. Clone the repository and enter it.
 
    ```
-   git clone https://github.com/USERNAME/reggiegpt.git
+   git clone https://github.com/reijinarudo/reggiegpt.git
    cd reggiegpt
    ```
 
